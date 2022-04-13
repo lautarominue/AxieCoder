@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    
+    
+    
+}
+
+.imagen__fondo{
+    background-image: url(../img/imagenfondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* menu */
+.hover:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+
+
+.nav{
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    text-align: center;
+    padding: 0.3rem;
+    
+    
+}
+
+.logo{
+    width: 70px;
+    transition: all 0.4s ease;
+    
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    
+}
+
+.boton__nav{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(#ff8cee, #8f5cf7);
+    width: 100%;
+    
+    
+}
+
+.div2{
+    margin-right: 25%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav__mobile{
+    background-image: linear-gradient(#ff8cee, #8f5cf7);
+    display: none;
+    justify-content: space-around;
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+}
+
+.nav__mobile__icons{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.icon{
+    font-size: 2.2rem;
+}
+
+
+@media only screen and (max-width:767px) {
+    .nav__mobile{
+        display: flex;
+        
+    }
+    .div2{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    article img {
+        display: none;
+    }
+    
+    /* contacto */
+    
+    .cuadro__form{
+        margin-bottom: 100px;
+    }
+
+    /* modos de juego */
+    .yout__vid{
+        margin-bottom: 100px;
+    }
+
+    
+}
+
+/* fin de nav */
+
+/* imagen portada */ 
+.imagen__portada{
+    margin-left:  20%;
+    margin-right: 20%;
+    width: 60%; 
+    border-radius: 40px;
+    margin-top: 100px;
+    margin-bottom: 40px;        
+    
+    
+}
+
+
+
+
+  
+
+
+/* fin imagen portada */
+
+/* Inicio tabla */
+.grid1{ grid-area: titulo;}
+.grid2{ grid-area: cuenta;}
+.grid3{ grid-area: gananciad;}
+.grid4{ grid-area: gananciam;}
+.grid5{ grid-area: pelu;}
+.grid6{ grid-area: celso;}
+.grid7{ grid-area: gpd;}
+.grid8{ grid-area: gpm;}
+.grid9{ grid-area: gpd2;}
+.grid10{ grid-area: gpm2;}
+
+
+.grid__container{
+    margin-bottom: 130px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    padding: 5px;
+    grid-template-areas: 
+    'titulo titulo titulo'
+    'cuenta gananciad gananciam'
+    'pelu gpd gpm'
+    'celso gpd2 gpm2'
+    ;
+
+}
+
+.grid__container div {
+    background-color: rgb(96, 69, 189);
+    border: solid black;
+    text-align: center;
+}
+
+@media only screen and (max-width:1023px){
+    .imagen__portada{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+        border: solid black;
+    }
+    .grid__container{
+        margin-bottom: 100px;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-areas: 
+        'titulo titulo'
+        'pelu celso'
+        'gananciad gananciad'
+        'gpd gpd2'
+        'gananciam gananciam'
+        'gpm gpm2'
+        
+        ;
+        
+        }
+    .grid2{
+        display: none;
+    }
+    @media only screen and (max-width:767px){
+        .grid__container{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .imagen__portada{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            border: none;
+        }
+    }
+    
+}
+
+
+
+/* fin de tabla */
+
+
+
+
+/* footer */
+.imgaxs{
+    width: 5%;
+    
+
+}
+.imgslp{
+    width: 5%;
+    
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(to top, #ef85ef , #8d5cf7);
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+
+footer div a{
+    color: black;
+    float: right;
+    text-decoration: none;
+}
+/* fin del footer */
+
+/* noticias */
+.subtitulo__not{
+    font-size: 2.5rem;
+    background-color: rgb(161, 99, 248);
+    border-bottom: dashed 1px black;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: underline;
+    animation-duration: 2s;
+    animation-name: titulonoticias;
+}
+.p__not{
+    font-size: 1.5rem;
+    background-color: rgb(161, 99, 248);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 1000px;
+    text-align: center;
+    border-style: solid;
+
+}
+
+@media only screen and (max-width:1024px){
+    .p__not{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .subtitulo__not{
+        width: 330px;
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .p__not{
+        font-size: 1rem;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* formulario */
+.form__contact{
+    border-radius: 60px;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.comentario__cont{
+    margin-bottom: 10px;
+}
+
+.titulo__contact{
+    background-color: rgb(161, 99, 248);
+    border-radius: 60px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 510px;
+    font-size: 3.5rem;
+    text-align: center;
+    text-decoration: underline;
+    animation-name: tituloanimation2;
+    animation-duration: 1.2s;
+    
+}
+
+.cuadro__form{
+    background-color: rgb(161, 99, 248);
+    width: 300px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container{
+    margin-top: 100px;
+    
+}
+
+@media only screen and (max-width:1024px){
+    .titulo__contact{
+        font-size: 3rem;
+        width: 450px;
+        text-decoration: none;
+    }
+    @media only screen and (max-width:767px){
+        .cuadro__form{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .titulo__contact{
+            width: 300px;
+            font-size: 2rem;
+        }
+    }
+}
+
+/* cartas */
+
+.titulo__cartas{
+    background-color: rgb(161, 99, 248);
+    border-radius: 60px;
+    margin: 5px;
+    font-size: 3.5rem;
+    width: 360px;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: tituloanimado;
+    animation-duration: 1.5s;  
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    
+    
+
+}
+
+
+.grid__container__card {
+    display: grid;
+    grid-template-areas: 
+    'auto auto auto auto'
+     ;
+    gap: 1rem;
+    
+    
+}
+
+
+
+
+/* media cartas */
+@media only screen and (max-width:1200px){
+    .grid__container__card{
+        grid-template-areas: 
+        'auto auto auto'
+        ;
+    }
+    @media only screen and (max-width:1024px){
+        .grid__container__card{
+            grid-template-areas: 
+            'auto auto'
+            ;
+        }
+        @media only screen and (max-width:766px){
+            .grid__container__card{
+                grid-template-areas: 
+                'auto'
+                ;
+            }
+        }
+    }
+    
+}
+
+/* fin media */
+
+.grid__container__card div {
+    background-color: rgb(96, 69, 189);
+    border: solid black;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+/* tipos de axies */
+.lista__ax{
+    width: 700px;
+    background-color: rgb(161, 99, 248);
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    margin-bottom: 208px;
+    margin-top: 20px;
+}
+
+
+
+/* modos de juego */
+
+.titulo__juego{
+    background-color: rgb(161, 99, 248);
+    border-radius: 60px;
+    width: 90px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation-duration: 2s;
+    animation-name: titulojuego;
+
+}
+
+.p__mjuego{
+    font-size: 1.5rem;
+    background-color: rgb(161, 99, 248);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    width: 1000px;
+    
+    
+}
+
+/* animaciones */
+
+@keyframes titulojuego {
+    from {
+      margin-left: 50%;
+      width: 90px;
+      
+      
+    }
+  
+    to {
+      margin-left: 10px;
+      width: 90px;
+      
+    }
+  }
+
+  @keyframes titulonoticias {
+    from {
+      margin-left: 40%;
+      width: 400px;
+      
+      
+    }
+  
+    to {
+      margin-left: 10px;
+      width: 400px;
+      
+    }
+  }
+
+  @keyframes tituloanimado {
+    0%   { opacity: 0; }
+    100%  { opacity: 1; }
+      
+  }
+
+  @keyframes tituloanimation2 { 
+      from {
+          margin-left: 50%;
+          width: 510px;
+      }
+      to{
+          margin-left: 35%;
+          width: 510px;
+      }
+      
+  }
+
+  @media only screen and (max-width:1024px){
+    .lista__ax{
+        font-size: 1.2rem;
+        width: 500px;
+    }
+    @keyframes titulonoticias {
+        from {
+          display: none; 
+        }
+      
+        to {
+          display: none; 
+        }
+      }
+      @keyframes titulojuego {
+        from{
+            display: none;
+        }
+        to{
+            display: none;
+        }
+    }
+    @keyframes tituloanimation2 {
+        from{
+            display: none;
+        }
+        to{
+            display: none;
+        }
+        
+    }
+}
+@media only screen and (max-width:767px){
+    .lista__ax{
+        font-size: 1rem;
+        width: 400px;
+    }
+    
+    
+
+}  
+
+  
+
+.yout__vid{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+article img{
+    width: 5cm;
+    margin-bottom: 100px;
+    
+    
+}
+
+@media only screen and (max-width:1024px){
+    .titulo__juego{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .p__mjuego{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subtitulo__not{
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        text-align: center;
+    }
+    .yout__vid{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    @media only screen and (max-width:766px){
+        .titulo__juego{
+            width: 100px;
+        }
+        .p__mjuego{
+            width: 400px;
+            text-align: center;
+        }
+        .subtitulo__not{
+            width: 350px;
+        }
+    }
+}
+
