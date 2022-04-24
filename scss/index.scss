@@ -1,0 +1,23 @@
+// views 
+@import "./views/home";
+@import "./views/noticias";
+@import "./views/contacto";
+@import "./views/cartas";
+@import "./views/axies";
+@import "./views/modosdejuego";
+
+// partials
+@import "./partials/header";
+@import "./partials/footer";
+
+//misc
+@import "./misc/var";
+@import "./misc/normalize";
+
+.imagen__fondo{
+    background-image: url(../img/imagenfondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+

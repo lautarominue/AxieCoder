@@ -1,0 +1,71 @@
+// cartas 
+
+/* cartas */
+
+.titulo__cartas{
+    background-color: rgb(161, 99, 248);
+    border-radius: 60px;
+    margin: 5px;
+    font-size: 3.5rem;
+    width: 360px;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: tituloanimado;
+    animation-duration: 1.5s;  
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    
+    
+
+}
+
+
+.grid__container__card {
+    display: grid;
+    grid-template-areas: 
+    'auto auto auto auto'
+     ;
+    gap: 1rem;
+    
+    
+}
+
+
+
+
+/* media cartas */
+@media only screen and (max-width:1200px){
+    .grid__container__card{
+        grid-template-areas: 
+        'auto auto auto'
+        ;
+    }
+    @media only screen and (max-width:1024px){
+        .grid__container__card{
+            grid-template-areas: 
+            'auto auto'
+            ;
+        }
+        @media only screen and (max-width:766px){
+            .grid__container__card{
+                grid-template-areas: 
+                'auto'
+                ;
+            }
+        }
+    }
+    
+}
+
+/* fin media */
+
+.grid__container__card div {
+    background-color: rgb(96, 69, 189);
+    border: solid black;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}

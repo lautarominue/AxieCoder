@@ -1,0 +1,61 @@
+// contacto
+
+/* formulario */
+.form__contact{
+    border-radius: 60px;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.comentario__cont{
+    margin-bottom: 10px;
+}
+
+.titulo__contact{
+    background-color: rgb(161, 99, 248);
+    border-radius: 60px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 510px;
+    font-size: 3.5rem;
+    text-align: center;
+    text-decoration: underline;
+    animation-name: tituloanimation2;
+    animation-duration: 1.2s;
+    
+}
+
+.cuadro__form{
+    background-color: rgb(161, 99, 248);
+    width: 300px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container{
+    margin-top: 100px;
+    
+}
+
+@media only screen and (max-width:1024px){
+    .titulo__contact{
+        font-size: 3rem;
+        width: 450px;
+        text-decoration: none;
+    }
+    @media only screen and (max-width:767px){
+        .cuadro__form{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .titulo__contact{
+            width: 300px;
+            font-size: 2rem;
+        }
+    }
+}

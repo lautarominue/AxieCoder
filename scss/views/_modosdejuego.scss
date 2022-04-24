@@ -1,0 +1,71 @@
+// modos de juego 
+
+/* modos de juego */
+
+.titulo__juego{
+    background-color: rgb(161, 99, 248);
+    border-radius: 60px;
+    width: 90px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation-duration: 2s;
+    animation-name: titulojuego;
+
+}
+
+.p__mjuego{
+    font-size: 1.5rem;
+    background-color: rgb(161, 99, 248);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    width: 1000px;
+    
+    
+}
+
+.yout__vid{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1024px){
+    .titulo__juego{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .p__mjuego{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subtitulo__not{
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        text-align: center;
+    }
+    .yout__vid{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    @media only screen and (max-width:766px){
+        .titulo__juego{
+            width: 100px;
+        }
+        .p__mjuego{
+            width: 400px;
+            text-align: center;
+        }
+        .subtitulo__not{
+            width: 350px;
+        }
+    }
+}

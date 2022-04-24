@@ -1,0 +1,39 @@
+/* footer */
+.imgaxs{
+    width: 5%;
+    
+
+}
+.imgslp{
+    width: 5%;
+    
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(to top, #ef85ef , #8d5cf7);
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+
+footer div a{
+    color: black;
+    float: right;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:767px) {
+    footer{
+        display: none;
+    }
+    article img {
+        display: none;
+    }
+}
+/* fin del footer */
