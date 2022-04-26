@@ -1,3 +1,8 @@
+// import 
+@import "../misc/var";
+
+
+
 /* footer */
 .imgaxs{
     width: 5%;
@@ -13,7 +18,7 @@ footer{
     position: absolute;
     width: 100%;
     bottom: 0;
-    background-image: linear-gradient(to top, #ef85ef , #8d5cf7);
+    background-color: $violet;
 }
 
 html {
@@ -23,7 +28,7 @@ html {
 
 
 footer div a{
-    color: black;
+    color: $black;
     float: right;
     text-decoration: none;
 }

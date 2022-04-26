@@ -169,7 +169,9 @@
     margin-right: auto; }
   .titulo__contact {
     width: 300px;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .cuadro__form {
+    margin-bottom: 100px; } }
 
 /* cartas */
 .titulo__cartas {
@@ -285,7 +287,9 @@
     width: 400px;
     text-align: center; }
   .subtitulo__not {
-    width: 350px; } }
+    width: 350px; }
+  .yout__vid {
+    margin-bottom: 100px; } }
 
 /* menu */
 .logo {
@@ -336,18 +340,17 @@
   .nav__mobile {
     display: flex; }
   .menu__div2 {
-    display: none; }
-  /* contacto */
-  .cuadro__form {
-    margin-bottom: 100px; }
-  /* modos de juego */
-  .yout__vid {
-    margin-bottom: 100px; } }
+    display: none; } }
 
 /* fin de nav */
 article img {
   width: 5cm;
   margin-bottom: 100px; }
+
+.hover:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s; }
 
 /* footer */
 .imgaxs {
@@ -360,7 +363,7 @@ footer {
   position: absolute;
   width: 100%;
   bottom: 0;
-  background-image: linear-gradient(to top, #ef85ef, #8d5cf7); }
+  background-color: violet; }
 
 html {
   min-height: 100%;
