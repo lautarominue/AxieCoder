@@ -1,0 +1,26 @@
+// maps
+/* maps */
+$mapscolor: (
+    planta: #a2ba1c,
+    pajaro: #ff9ab8,
+    bestia: #6f401e,
+    acuatico: #3b91ca,
+);
+
+@each $nombres, $color in $mapscolor {
+    .bg-#{$nombres} {
+        background-color: $color;
+    }
+    
+}
+
+/* mixins */
+
+@mixin var-hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+.hover:hover {
+    @include var-hover;
+}

@@ -13,6 +13,7 @@
 //misc
 @import "./misc/var";
 @import "./misc/normalize";
+@import "./misc/mixins";
 
 .imagen__fondo{
     background-image: url(../img/imagenfondo.jpg);
@@ -20,4 +21,3 @@
     background-attachment: fixed;
     background-size: cover;
 }
-

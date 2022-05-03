@@ -13,7 +13,16 @@
     margin-bottom: 10px;
     animation-duration: 2s;
     animation-name: titulojuego;
+    
 
+}
+
+.titulo__juego__nuevo{
+    @extend .titulo__juego;
+    width: 400px;
+    text-decoration: underline;
+
+    
 }
 
 .p__mjuego{
@@ -39,16 +48,14 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .titulo__juego__nuevo{
+        font-size: 2.0rem;
+        width: 330px;
+    }
     .p__mjuego{
         width: 500px;
         margin-left: auto;
         margin-right: auto;
-    }
-    .subtitulo__not{
-        margin-left: auto;
-        margin-right: auto;
-        width: 400px;
-        text-align: center;
     }
     .yout__vid{
         width: 80%;
@@ -60,12 +67,12 @@
         .titulo__juego{
             width: 100px;
         }
+        .titulo__juego__nuevo{
+            width: 250px;
+        }
         .p__mjuego{
             width: 400px;
             text-align: center;
-        }
-        .subtitulo__not{
-            width: 350px;
         }
         .yout__vid{
             margin-bottom: 100px;
