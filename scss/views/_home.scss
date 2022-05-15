@@ -1,90 +1,158 @@
 // home 
 
-/* imagen portada */ 
-.imagen__portada{
-    margin-left:  20%;
-    margin-right: 20%;
-    width: 60%; 
-    border-radius: 40px;
-    margin-top: 100px;
-    margin-bottom: 40px;        
-}
-/* fin imagen portada */
-
-/* Inicio tabla */
-.grid1{ grid-area: titulo;}
-.grid2{ grid-area: cuenta;}
-.grid3{ grid-area: gananciad;}
-.grid4{ grid-area: gananciam;}
-.grid5{ grid-area: pelu;}
-.grid6{ grid-area: celso;}
-.grid7{ grid-area: gpd;}
-.grid8{ grid-area: gpm;}
-.grid9{ grid-area: gpd2;}
-.grid10{ grid-area: gpm2;}
-
-
-.grid__container{
-    margin-bottom: 130px;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: grid;
-    padding: 5px;
-    grid-template-areas: 
-    'titulo titulo titulo'
-    'cuenta gananciad gananciam'
-    'pelu gpd gpm'
-    'celso gpd2 gpm2'
-    ;
-
-}
-
-.grid__container div {
-    background-color: rgb(96, 69, 189);
-    border: solid black;
-    text-align: center;
-}
-
-@media only screen and (max-width:1023px){
-    .imagen__portada{
+.home {
+    &__video {
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        border-radius: 0;
-        border: solid black;
+        margin-bottom: 12%;
+        
+
     }
-    .grid__container{
-        margin-bottom: 100px;
-        margin-left: 5%;
-        margin-right: 5%;
-        display: grid;
-        grid-template-areas: 
-        'titulo titulo'
-        'pelu celso'
-        'gananciad gananciad'
-        'gpd gpd2'
-        'gananciam gananciam'
-        'gpm gpm2'
-        
-        ;
-        
+    &__cloud { 
+        position: absolute;
+        width: 100%;    
+    }
+    &__flag {
+        text-align: center;
+        height: 47vh;
+        &__container {
+            background-image: url("https://cdn.axieinfinity.com/landing-page/_next/static/images/scroll-663a1f21776613e7cb0162d91ef76656@1x.webp");
+            background-repeat: no-repeat;
+            width: 1000px;
+            height: 47vh;
+            margin-left: auto;
+            margin-right: auto;
+            background-size: cover;
+            & h1 {
+                padding-top: 4rem;
+                font-size: 3.5rem;
+                text-transform: uppercase;
+                color: #e08d2a;
+            }
+            & h2 {
+                font-size: 2rem;
+                color: #e08d2a;
+                padding-top: 1.2rem;
+            }
         }
-    .grid2{
+    }
+    &__mobile {
         display: none;
     }
-    @media only screen and (max-width:767px){
-        .grid__container{
-            margin-left: 2%;
-            margin-right: 2%;
+    &__players {
+        display: flex;
+        justify-content: space-between;
+        margin: 6rem 0;
+        align-items: center;
+
+        &__img {
+            animation-name: home-axie;
+            animation-duration: 1.3s;
+            animation-fill-mode: both;
+            position: absolute;
+            & img {
+                
+                width: 100%;
+                margin-bottom: 0;
+            }
         }
-        .imagen__portada{
-            width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-            border: none;
+        & .prueba {
+            background-image: url(../img/fondomobile.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation-name: home-player;
+            animation-duration: 1.3s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-out;
+            border-radius: 3rem 0rem 0rem 3rem;
+            box-shadow: 0 1rem 4rem rgba(0,0,0,0.7);
+            width: 55%;
+            position: absolute;
+            right: 0%;
+            padding: 1.5rem 0;
+        }
+        &__container {
+            
+            display: flex;
+            justify-content: space-around;
+            
+            
+           
+            
+            & div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #e08d2a;
+                animation-name: home-player-container;
+                animation-duration: 4s;
+                animation-fill-mode: both;
+                & i {
+                    font-size: 950%;
+                }
+                & h3, p {
+                    font-size: 200%;
+                }
+                
+            }
         }
     }
     
 }
 
-/* fin de tabla */
+@keyframes home-axie {
+    0% {left: -30%;}
+    100% {left: 3%;
+    }
+}
+@keyframes home-player {
+    0% {width: 0;}
+    100% {width: 55%;}
+}
+@keyframes home-player-container {
+    0% {opacity: 0;
+    width: 0;
+    }
+    100% {opacity: 1;
+    width: 100%;
+    }
+}
+
+// media 
+
+@media only screen and (max-width:1024px){
+    .home__flag__container {
+        width: 752px;
+        height: 35vh;
+        & h2 {
+            font-size: 1.8rem;
+        }
+    }
+    .prueba {
+        width: 75%;
+    }
+    @keyframes home-player {
+        0% {width: 0;}
+        100% {width: 75%;}
+    }
+    .home__players__img {
+        display: none ;
+    }
+    @media only screen and (max-width:767px){
+        .home__flag {
+            display: none;
+        }
+        .home__players{
+            display: none;
+        }
+        .home__mobile {
+            text-align: center;
+        }
+        .home {
+            background-image: url(../img/fondomobile.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+

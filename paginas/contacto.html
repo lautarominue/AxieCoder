@@ -16,68 +16,111 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/60e1381db5.js" crossorigin="anonymous"></script>
 </head>
 <body class="imagen__fondo">
 
-   <!--menu de navegacion-->
-  <header>
-    <nav class="menu">
-       <div>
-        <a class="nav" href="../index.html"><img src="../resources/icon/icono.png" class="logo" alt="logo home"></a> 
-       </div> 
-       <div class="menu__div2"> 
-        <a href="../paginas/noticias.html" class="boton__nav nav hover">Noticias</a>
-        <a href="../paginas/contacto.html" class="boton__nav nav hover">Contacto</a>
-        <a href="../paginas/cartas.html" class="boton__nav nav hover">Cartas</a>
-        <a href="../paginas/axies.html" class="boton__nav nav hover">Axies</a>
-        <a href="../paginas/modosdejuego.html" class="boton__nav nav hover">Modos de juego</a>
-       </div>  
-    </nav>
-
-    <section class="nav__mobile">
-      
-        <div>
-          <a class="nav__mobile__icons" href="../paginas/noticias.html">
-            <span class="material-icons-outlined icon">
-                newspaper
+  <header class="header">
+    <!--nav-->
+    <nav class="nav">
+      <div class="nav__mobile" id="mySidebar">
+        <div class="nav__mobile__container">
+          <a href="./noticias.html">Noticias</a>
+        </div>
+        <div class="nav__mobile__container">
+          <a href="./contacto.html">Contacto</a>
+        </div>
+        <div class="nav__container__axies nav__mobile__container">
+          <div onclick="fuctionmore()">
+            Axies 
+            <span class="material-symbols-outlined">
+              expand_more
               </span>
-              <p>News</p>
-          </a>
+          </div>
+          <div class="nav__mobile__container__axies__more" id="myMoreAxie">
+            <div>
+              <a href="./acuatico.html">Acuatico</a>
+            </div>
+            <div>
+              <a href="">Bestia</a>
+            </div>
+            <div>
+              <a href="">Pajaro</a>
+            </div>
+            <div>
+              <a href="">Planta</a>
+            </div>
+          </div>
         </div>
-        <div>
-          <a class="nav__mobile__icons" href="../paginas/contacto.html">
-          <span class="material-icons-outlined">
-              person
-            </span>
-            <p>Contact</p>
-          </a>
+        <div class="nav__mobile__container">
+          <a href="./modosdejuego.html">Modos de juego</a>
         </div>
-        <div>
-          <a class="nav__mobile__icons" href="../paginas/cartas.html">
-          <span class="material-icons-outlined">
-              recent_actors
-            </span>
-            <p>Cards</p>
-          </a>  
+        <div class="nav__mobile__container__social">
+          <div>
+            <a href="https://github.com/lautarominue">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://wa.me/1139171809?text=¡Hola,+muy+buena+pagina!">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div>
+            <a href="mailto:minue.lautaro7@gmail.com">
+              <i class="fa-solid fa-at"></i>
+            </a>
+          </div>
         </div>
-        
-        <div>
-          <a class="nav__mobile__icons" href="../paginas/axies.html">
-          <span class="material-icons-outlined">
-              flutter_dash
-            </span>
-            <p>Axies</p>
-          </a>  
+      </div>
+      <div class="nav__container">
+        <a class="nav__container__logo" style="background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/logo-f3b5c962671a2516bc9fef42ad9e9145@1x.webp);" href="../index.html"></a>
+
+        <div class="nav__container__menu">
+          <a href="./noticias.html">Noticias</a>
         </div>
-        <div>
-          <a class="nav__mobile__icons" href="../paginas/modosdejuego.html">
-          <span class="material-icons-outlined">
-              sports_esports
-            </span>
-            <p>Games</p>
-          </a>  
+        <div class="nav__container__menu">
+          <a href="./contacto.html">Contacto</a>
         </div>
-      </section>
+        <div class="nav__container__axies nav__container__menu">
+          <a href="./acuatico.html">Axies</a>
+          <div class="dropdown">
+              <div>
+                  <div>
+                      <a href="./acuatico.html">Acuatico</a>
+                  </div>
+                  <div>
+                      <a href="">Bestia</a>
+                  </div>
+                  <div>
+                      <a href="">Pajaro</a>
+                  </div>
+                  <div>
+                      <a href="">Planta</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="nav__container__menu">
+          <a href="./modosdejuego.html">Modos de juego</a>
+        </div>
+        <!-- boton mobile -->
+        <div class="nav__boton" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      
+      
+
+    </nav>
   </header>     
 
     <header>
@@ -149,6 +192,25 @@
         <img src="../img/iconslp.png" class="imgslp" alt="imgslp">
     </div>
 </footer>
+<script>
+  var btn = document.getElementById("mySidebar");
+  var btnmore = document.getElementById("myMoreAxie")
+  function myFunction(x) {
+    x.classList.toggle("change");
+    if (btn.style.display === 'flex') {
+          btn.style.display = 'none';
+      } else {
+          btn.style.display = 'flex';
+      }
+  }
+  function fuctionmore() {
+    if (btnmore.style.display === 'flex') {
+          btnmore.style.display = 'none' ;
+    } else {
+          btnmore.style.display = 'flex' ;
+    }
+  }
+</script>
     
 
     

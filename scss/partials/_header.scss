@@ -1,77 +1,164 @@
 /* menu */
-
-
-.logo{
-    width: 70px;
-    transition: all 0.4s ease;
-    &:hover {
-        transform: scale(1.1);
-    }
-}
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(#ff8cee, #8f5cf7);
-    width: 100%;
-    .nav {
-        text-decoration: none;
-        color: black;
-        width: fit-content;
-        text-align: center;
-        padding: 0.3rem;                           
-    }
-    &__div2 {
-        margin-right: 25%;
-        width: 50%;
-        display: flex;
-        justify-content: space-around;
-        .boton__nav {
-            background-color: black;
-            border-radius: 5px;
-            color: white;
-        }
-        
-    }
-}
-
-
-.nav__mobile{
-    background-image: linear-gradient(#ff8cee, #8f5cf7);
-    display: none;
-    justify-content: space-around;
-    bottom: 0%;
+.header {
+    z-index: 2;
     position: fixed;
+    max-width: 100vw;
     width: 100%;
-    padding: 5px;
-    &__icons {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        justify-content: center;
-        text-align: center;
-        color: black;
-    }
+    top: 0;
 }
-
-
-@media only screen and (max-width:767px) {
-    .nav__mobile{
-        display: flex;
-        
-    }
-    .menu__div2{
+.nav {
+    width: 100vw;
+    background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/navbar-ccacca9c656f799b3a24455d53269b60@1x.webp);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 1440px 64px;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 64px;
+    &__boton {
         display: none;
     }
-
+    &__container {
+        position: relative;
+        width: 80%;
+        max-width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-items: center;
+        justify-content: space-between;
+        &__logo {
+            width: 134px;
+            height: 72px;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: contain;
+            
+        }
+        & div {
+            color: white;
+            padding-top: 10px;
+            & a {
+                color: white;
+                text-decoration: none;
+            }
+            
+        }
+        &__axies {
+            color: white;
+            & a {
+                text-decoration: none;
+                color: white;
+            }
+            & .dropdown {
+                display: none;
+                position: absolute;
+                background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/bg-39f094fe4846d2bccecb713bb84932fa@1x.webp);
+                width: 211px;
+                background-repeat: no-repeat;
+                height: 200px;
+                text-align: center;
+                margin-left: -85px;
+            }
+        }
+    }
+    
 }
+
+.nav__container__axies:hover .dropdown {
+    display: block;
+  }
+
+.nav__mobile {
+    background-image: url(../img/fondomobile.jpg);
+    position: absolute;
+    z-index: -999;
+    padding-top: 90px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 25px;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    border-bottom: 2px solid #22140a;
+    &__container__axies__more {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        & div {
+            padding: 0.5rem 0rem;
+            & a {
+                font-size: 20px;
+            }
+        }
+    }
+    &__container {
+        padding: 1.5rem 0rem;
+    }
+        & a {
+            color: white;
+            text-decoration: none;
+        }
+    &__container__social {
+        display: flex;
+        justify-content: space-around;
+        & div i {
+            color: white;
+            padding: 1rem 0rem;
+        }
+        
+    }    
+    }
+
+// boton mobile
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
 
 /* fin de nav */
 
-article img{
-    width: 5cm;
-    margin-bottom: 100px;
+
+.nav__mobile {
+    display: none;
+    animation-name: xmobile;
+    animation-duration: 0.3s;
+
+}
+@keyframes xmobile {
+    0% {height: 0;}
+    100% {height: 370px;}
+}
+@media only screen and (max-width:1024px){
+    .nav__container__menu {
+        display: none;
+    }
+    .nav__boton {
+        display: block ;
+        padding-top: 5px !important;
+        & div {
+            padding: 0 !important;
+        }
+
+    }
+    
     
     
 }

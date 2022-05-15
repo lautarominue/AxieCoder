@@ -1,0 +1,78 @@
+@import "../misc/var";
+
+.acuatico {
+    background-color: #f7e7c6;
+    &__encabezado{
+        &__cartel {
+            margin-top: 43px;
+            text-align: center;
+        }
+    }
+    &__main {
+        background-image: url("https://pinkipollos.es/wp-content/uploads/2022/04/Fondito_v1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        &__container {
+            display: grid;
+            grid-template-areas: 'auto auto auto';
+            perspective: 1000px;
+            position: relative;
+            gap: 1.5rem ;
+            &__div {
+                display: flex;
+                justify-content: center;
+            }
+            &__card {
+                width: 300px;
+                height: 454px;
+                position: relative;
+                perspective: 1000px;
+                &__3d {
+                    transform-style: preserve-3d;
+                    transition: all 0.5s linear;
+                    & div {
+                        position: absolute;
+                        backface-visibility: hidden;
+                        & img {
+                            width: 300px;
+                        }
+                    }
+                    &__back {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+
+.acuatico__main__container__card:hover .acuatico__main__container__card__3d {
+    transform: rotateY(180deg);
+}
+
+//media 
+
+@media only screen and (max-width:1200px){
+    .acuatico__main__container {
+        grid-template-areas: 'auto auto';
+    }
+    @media only screen and (max-width:800px){
+        .acuatico__encabezado__cartel img {
+            width: 35rem;
+        }
+        @media only screen and (max-width:670px){
+            .acuatico__main__container {
+                grid-template-areas: 'auto';
+            }
+            .acuatico__encabezado__cartel img {
+                width: 24rem;
+            }
+        }
+        
+    }
+}
