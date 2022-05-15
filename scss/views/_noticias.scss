@@ -8,8 +8,9 @@
     padding: 8rem 0;
     background-image: url("https://cdn.axieinfinity.com/landing-page/_next/static/images/banner-bbfbb8462c9156a1fc392a32b9448b62.jpg");
     background-size: cover;
-    font-size: 3rem;
+    font-size: 5rem;
     color: $gold;
+    background-position: center;
 }
 .main__noticias {
     background: url("https://cdn.axieinfinity.com/assets/images/e6c085be7f7d7671135ab09507bdd489.png") center 15px / 446px 35px repeat-x, url("https://cdn.axieinfinity.com/assets/images/e6c085be7f7d7671135ab09507bdd489.png") center calc(100% - 15px) / 446px 35px repeat-x, linear-gradient(to right top, rgb(97, 39, 31), rgb(104, 57, 21));
@@ -81,6 +82,9 @@
         @media only screen and (max-width:670px){
             .noticias {
                 grid-template-areas: 'auto';
+                &__titulo {
+                    font-size: 3rem;
+                }
             }
         }
         

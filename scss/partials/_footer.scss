@@ -6,6 +6,7 @@ footer {
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-top: 2.5rem;
     
 }
 
@@ -41,7 +42,7 @@ footer {
         &__left {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            justify-content: center;
             & div {
                 display: flex;
                 justify-content: space-around;

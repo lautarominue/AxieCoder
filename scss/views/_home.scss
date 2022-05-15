@@ -14,13 +14,12 @@
     &__flag {
         text-align: center;
         height: 47vh;
+        display: flex;
+        justify-content: center;
         &__container {
             background-image: url("https://cdn.axieinfinity.com/landing-page/_next/static/images/scroll-663a1f21776613e7cb0162d91ef76656@1x.webp");
             background-repeat: no-repeat;
             width: 1000px;
-            height: 47vh;
-            margin-left: auto;
-            margin-right: auto;
             background-size: cover;
             & h1 {
                 padding-top: 4rem;

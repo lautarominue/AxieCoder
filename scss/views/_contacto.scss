@@ -1,45 +1,49 @@
+@import "../misc/var";
+
 // contacto
 
 /* formulario */
-.form__contact{
-    border-radius: 60px;
-    text-align: center;
-    width: 200px;
-    margin-bottom: 10px;
-}
 
-.comentario__cont{
-    margin-bottom: 10px;
-}
-
-.titulo__contact{
-    background-color: rgb(161, 99, 248);
-    border-radius: 60px;
-    margin-bottom: 10px;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 510px;
-    font-size: 3.5rem;
-    text-align: center;
-    text-decoration: underline;
-    animation-name: tituloanimation2;
-    animation-duration: 1.2s;
-    
-}
-
-.cuadro__form{
-    background-color: rgb(161, 99, 248);
-    width: 300px;
-    border-style: solid;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.container{
-    margin-top: 100px;
-    
+.contacto {
+    background-image: url("../img/fondocontacto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding-top: 4.4rem;
+    display: flex;
+    justify-content: end;
+    padding-right: 6%;
+    &__container {
+        width: 430px;
+        height: 503px;
+        background-image: url("https://cdn.axieinfinity.com/landing-page/_next/static/images/p2e-paper-e5b15f2bb8e6c1e8d2d006e438af5351@1x.webp");
+        &__form {
+            display: flex;
+            padding: 1rem 2rem;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 475px;
+            &__boton {
+                background-color: #2061c9;
+                color: white;
+                border-radius: 0.5rem;
+            }
+            & h1 {
+                text-align: center;
+                color: #2061c9;
+                font-size: 2.5rem;
+            }
+            & input {
+                padding: 0.5rem;
+                cursor: pointer;
+            }
+            &__social {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:1024px){
