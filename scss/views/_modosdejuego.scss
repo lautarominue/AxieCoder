@@ -1,46 +1,68 @@
 // modos de juego 
 
 /* modos de juego */
-
-.titulo__juego{
-    background-color: rgb(161, 99, 248);
-    border-radius: 60px;
-    width: 90px;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    animation-duration: 2s;
-    animation-name: titulojuego;
-    
-
+.modos {
+    width: 100%;
+    height: 65vh;
+    &__video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    &__container {
+        height: 30vh;
+        &__foto{
+            position: absolute;
+            background-color: #222635;
+            width: 100%;
+            height: 37vh;
+            &__info {
+                padding: 2rem;
+                & h1 {
+                    font-size: 3rem;
+                    color: white;
+                    text-align: center;
+                    padding-bottom: 1rem;
+                }
+                & p {
+                    font-size: 1.2rem;
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__data {
+        background-color: #27493f;
+        padding: 5rem;
+        & h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            
+        }
+        & p {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            text-align: center;
+            
+        }
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+    }
 }
 
-.titulo__juego__nuevo{
-    @extend .titulo__juego;
-    width: 400px;
-    text-decoration: underline;
 
-    
-}
-
-.p__mjuego{
-    font-size: 1.5rem;
-    background-color: rgb(161, 99, 248);
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    border-style: solid;
-    width: 1000px;
-    
-    
-}
-
-.yout__vid{
-    margin-left: 10px;
-    margin-top: 10px;
-}
 
 @media only screen and (max-width:1024px){
     .titulo__juego{

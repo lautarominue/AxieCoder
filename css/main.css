@@ -293,16 +293,6 @@
   margin-right: auto; }
 
 /* tipos de axies */
-.lista__ax {
-  width: 700px;
-  background-color: #a163f8;
-  border-style: solid;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.5rem;
-  margin-bottom: 208px;
-  margin-top: 20px; }
-
 @media only screen and (max-width: 1024px) {
   .lista__ax {
     font-size: 1.2rem;
@@ -369,37 +359,54 @@
     width: 22rem; } }
 
 /* modos de juego */
-.titulo__juego, .titulo__juego__nuevo {
-  background-color: #a163f8;
-  border-radius: 60px;
-  width: 90px;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  animation-duration: 2s;
-  animation-name: titulojuego; }
-
-.titulo__juego__nuevo {
-  width: 400px;
-  text-decoration: underline; }
-
-.p__mjuego {
-  font-size: 1.5rem;
-  background-color: #a163f8;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  border-style: solid;
-  width: 1000px; }
-
-.yout__vid {
-  margin-left: 10px;
-  margin-top: 10px; }
+.modos {
+  width: 100%;
+  height: 65vh; }
+  .modos__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0; }
+  .modos__container {
+    height: 30vh; }
+    .modos__container__foto {
+      position: absolute;
+      background-color: #222635;
+      width: 100%;
+      height: 37vh; }
+      .modos__container__foto__info {
+        padding: 2rem; }
+        .modos__container__foto__info h1 {
+          font-size: 3rem;
+          color: white;
+          text-align: center;
+          padding-bottom: 1rem; }
+        .modos__container__foto__info p {
+          font-size: 1.2rem;
+          color: white;
+          text-align: center; }
+  .modos__data {
+    background-color: #27493f;
+    padding: 5rem; }
+    .modos__data h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 20px; }
+    .modos__data p {
+      font-size: 1.2rem;
+      margin-bottom: 50px;
+      text-align: center; }
+    .modos__data__info {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 @media only screen and (max-width: 1024px) {
-  .titulo__juego, .titulo__juego__nuevo {
+  .titulo__juego {
     width: 150px;
     margin-left: auto;
     margin-right: auto; }
@@ -416,7 +423,7 @@
     margin-right: 10%; } }
 
 @media only screen and (max-width: 1024px) and (max-width: 766px) {
-  .titulo__juego, .titulo__juego__nuevo {
+  .titulo__juego {
     width: 100px; }
   .titulo__juego__nuevo {
     width: 250px; }
