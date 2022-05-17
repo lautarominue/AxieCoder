@@ -1,20 +1,27 @@
 // axies 
 
 /* tipos de axies */
+.imagen__axie {
+    display: flex;
+    justify-content: center;
+}
+.imagen__info__axie {
+    width: 1024px;
+    & img {
+        width: 100%;
+    }
+}
 
+@keyframes imagenaxie {
+    0% {width: auto;}
+    100% {width: 70%;}
+    
+}
 
 @media only screen and (max-width:1024px){
-    .lista__ax{
-        font-size: 1.2rem;
-        width: 500px;
-    }
-    @media only screen and (max-width:767px){
-        .lista__ax{
-            font-size: 1rem;
-            width: 320px;
+        .imagen__axie {
+            width: auto;
         }
-        
-        
-    
+    @media only screen and (max-width:767px){  
     }  
 }  

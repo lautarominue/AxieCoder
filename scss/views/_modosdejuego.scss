@@ -96,7 +96,8 @@
         }
         &__bot {
             color: white;
-            display: flex;
+            display: grid;
+            grid-template-areas: 'auto auto auto auto auto auto';
             justify-content: space-between;
             align-items: center;
             padding-top: 1rem;
@@ -151,12 +152,19 @@
         }
           
         @media only screen and (max-width:720px){
+             .land, .mochileros, .pve{
+                padding: 0 0.8rem;
+            }
             .land {
                 padding: 2rem 0.3rem;
             }
            .land__container__img {
                flex-direction: column;
            } 
+           .mochileros__container__bot {
+               grid-template-areas: 'auto auto auto';
+               gap: 0.5rem;
+           }
         }
     }
 

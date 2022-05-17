@@ -1,3 +1,5 @@
+@import "../misc/var";
+
 // home 
 
 .home {
@@ -95,6 +97,9 @@
                 
             }
         }
+        .home__mobile {
+            display: none;
+        }
     }
     
 }
@@ -145,7 +150,19 @@
             display: none;
         }
         .home__mobile {
+            display: block;
             text-align: center;
+            & div {
+                margin-top: 10px;
+            }
+            & h2 {
+                font-size: 2rem;
+                color: $gold;
+            }
+            & h3 {
+                color: $gold;
+            }
+            
         }
         .home {
             background-image: url(../img/fondomobile.jpg);

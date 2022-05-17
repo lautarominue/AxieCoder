@@ -73,6 +73,8 @@
         font-size: 950%; }
       .home__players__container div h3, .home__players__container div p {
         font-size: 200%; }
+  .home__players .home__mobile {
+    display: none; }
 
 @keyframes home-axie {
   0% {
@@ -116,7 +118,15 @@
   .home__players {
     display: none; }
   .home__mobile {
+    display: block;
     text-align: center; }
+    .home__mobile div {
+      margin-top: 10px; }
+    .home__mobile h2 {
+      font-size: 2rem;
+      color: #e08d2a; }
+    .home__mobile h3 {
+      color: #e08d2a; }
   .home {
     background-image: url(../img/fondomobile.jpg);
     background-repeat: no-repeat;
@@ -294,15 +304,24 @@
   margin-right: auto; }
 
 /* tipos de axies */
-@media only screen and (max-width: 1024px) {
-  .lista__ax {
-    font-size: 1.2rem;
-    width: 500px; } }
+.imagen__axie {
+  display: flex;
+  justify-content: center; }
 
-@media only screen and (max-width: 1024px) and (max-width: 767px) {
-  .lista__ax {
-    font-size: 1rem;
-    width: 320px; } }
+.imagen__info__axie {
+  width: 1024px; }
+  .imagen__info__axie img {
+    width: 100%; }
+
+@keyframes imagenaxie {
+  0% {
+    width: auto; }
+  100% {
+    width: 70%; } }
+
+@media only screen and (max-width: 1024px) {
+  .imagen__axie {
+    width: auto; } }
 
 .acuatico {
   background-color: #f7e7c6; }
@@ -434,7 +453,8 @@
         padding: 1rem 0rem; }
     .mochileros__container__bot {
       color: white;
-      display: flex;
+      display: grid;
+      grid-template-areas: 'auto auto auto auto auto auto';
       justify-content: space-between;
       align-items: center;
       padding-top: 1rem; }
@@ -471,10 +491,15 @@
     display: none; } }
 
 @media only screen and (max-width: 1024px) and (max-width: 720px) {
+  .land, .mochileros, .pve {
+    padding: 0 0.8rem; }
   .land {
     padding: 2rem 0.3rem; }
   .land__container__img {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .mochileros__container__bot {
+    grid-template-areas: 'auto auto auto';
+    gap: 0.5rem; } }
 
 /* menu */
 .header {
@@ -677,9 +702,3 @@ footer {
   cursor: pointer;
   opacity: 0.7;
   transition: 0.2s; }
-
-.imagen__fondo {
-  background-image: url(../img/imagenfondo.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; }
